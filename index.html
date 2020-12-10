@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/d644a60a14.js" crossorigin="anonymous"></script>
+    <style>
+        .img-circle {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 34%;
+            float: right;
+            height: auto;
+
+        }
+
+        nav.navbar-inverse {
+            overflow: hidden;
+            background-color: #333;
+            top: 0;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+
+        .container {
+            background-color: grey;
+            width: 100%;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            border-radius: 25px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-left: 10em;
+            margin-right: 12em;
+
+        }
+
+
+        .text {
+            display: inline-block;
+            padding-left: 5px;
+            font-family: myFirstFont;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin-left: 5em;
+            margin-right: 5em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
+
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ComputerHeroBanner.jpg");
+            height: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+        }
+
+        .hero-text {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .hero-text button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            color: black;
+            background-color: #ddd;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+
+        .menuButton {
+            position: fixed;
+            background-color: darkgrey;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 1em;
+            margin-top: 2.5em;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:antiquewhite;">
+
+
+
+
+    <a name="HomeTarget"></a>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">James Lynam</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#HomeTarget">Home</a></li>
+                <li><a href="#ContactTarget">Contact Me</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#HomeTarget">Home</a>
+        <a href="#ContactTarget">Contact</a>
+        <a href="#">TODO</a>
+        <a href="#">TODO</a>
+    </div>
+
+
+    <div class="menuButton">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">James Lynam</h1>
+            <p>Software Developer</p>
+        </div>
+    </div>
+
+
+    <!--
+
+-->
+
+
+
+
+
+    <!--       -->
+
+
+
+
+
+
+
+    <div class="container">
+        <a name="ContactTarget"></a>
+        <img src="me.png" class="img-circle" alt="Cinque Terre" height=500 width=300>
+        <h1>James Lynam</h1>
+        <h2>Student of Computing</h2>
+        <div class="row-md-4">
+            <i class="fas fa-envelope fa-3x"></i>
+            <div class="text">
+                <h3>X00073019@mytudublin.ie</h3>
+            </div>
+
+        </div>
+
+        <div class="row-md-4">
+            <i class="fas fa-phone-square-alt fa-3x"></i>
+            <div class="text">
+                <h3>0851234567</h3>
+            </div>
+
+        </div>
+
+        <div class="row-md-4">
+            <i class="fas fa-map-signs fa-3x"></i>
+            <div class="text">
+                <h3>A Random House, Some Road, Tallaght</h3>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+
+
+
+</body></html>
