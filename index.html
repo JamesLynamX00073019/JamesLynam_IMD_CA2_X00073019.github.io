@@ -4,191 +4,101 @@
 <head>
     <script src="https://kit.fontawesome.com/d644a60a14.js" crossorigin="anonymous"></script>
     <style>
-        .img-circle {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 34%;
-            float: right;
-            height: auto;
-
-        }
-
-        nav.navbar-inverse {
-            overflow: hidden;
-            background-color: #333;
-            top: 0;
-            width: 100%;
-            margin-bottom: 0;
-        }
-
-
-        .container {
-            background-color: grey;
-            width: 100%;
-            padding-bottom: 16px;
-            padding-top: 16px;
-            border-radius: 25px;
-            margin-top: 10%;
-            margin-bottom: 10%;
-            margin-left: 10em;
-            margin-right: 12em;
-
-        }
-
-
-        .text {
-            display: inline-block;
-            padding-left: 5px;
-            font-family: myFirstFont;
-        }
-
-        body,
-        html {
-            height: 100%;
-            margin-left: 5em;
-            margin-right: 5em;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: antiquewhite;
-        }
-
-
-
-        .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ComputerHeroBanner.jpg");
-            height: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-bottom: 0;
-            margin-bottom: 0;
-
-        }
-
-        .hero-text {
-            text-align: center;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-
-        .hero-text button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 10px 25px;
-            color: black;
-            background-color: #ddd;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-
-        .menuButton {
-            position: fixed;
-            background-color: darkgrey;
-            padding: 5px;
-            border-radius: 10px;
-            margin-left: 1em;
-            margin-top: 2.5em;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-
-            .sidenav a {
-                font-size: 18px;
-            }
-        }
     </style>
 
 
 
 
-
-
-
-
-
-
-    <title>Bootstrap Example</title>
+    <title>James Lynam - IMD CA2 - CV</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="scripts" href="scripts.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
-<body style="background-color:antiquewhite;">
 
+
+
+<body>
 
 
 
     <a name="HomeTarget"></a>
+
+
+    <div class="hero-image">
+
+        <div class="menuButton">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        </div>
+
+
+
+
+        <div class="hero-text">
+
+            <img src="me.png" class="profilePic" alt="Cinque Terre" height=500 width=300>
+
+            <div class="heroTextBox">
+
+                <div class="well" style="font-size:30px">James Lynam</div>
+                <div class="well well-sm" style="font-size:20px">Software Developer</div>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="ml-5 mr-5 btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Me</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p class="display-4" style="text-align: center; font-size: 30px">Contact Me</p>
+                        <div class="form-group mt-5">
+                            <label for="firstNameInput">First Name</label>
+                            <input type="text" class="form-control" id="firstNameInput" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastNameInput">Last Name</label>
+                            <input type="text" class="form-control" id="lastNameInput" placeholder="Enter  Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email Address</label>
+                            <input type="email" name="email" placeholder="Enter Email Address" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formQuery">Message</label>
+                            <textarea class="form-control" id="formQuery" rows="3" placeholder="Please enter your message"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+
+                        </div>
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -197,7 +107,9 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="#HomeTarget">Home</a></li>
+
                 <li><a href="#ContactTarget">Contact Me</a></li>
+
                 <li><a href="#">Page 2</a></li>
                 <li><a href="#">Page 3</a></li>
             </ul>
@@ -215,75 +127,432 @@
     </div>
 
 
-    <div class="menuButton">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-    </div>
-
-
-
-
-
-
-
-
-
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1 style="font-size:50px">James Lynam</h1>
-            <p>Software Developer</p>
-        </div>
-    </div>
-
-
-    <!--
-
--->
-
-
-
-
-
-    <!--       -->
-
-
-
-
-
-
-
     <div class="container">
-        <a name="ContactTarget"></a>
-        <img src="me.png" class="img-circle" alt="Cinque Terre" height=500 width=300>
-        <h1>James Lynam</h1>
-        <h2>Student of Computing</h2>
-        <div class="row-md-4">
-            <i class="fas fa-envelope fa-3x"></i>
-            <div class="text">
-                <h3>X00073019@mytudublin.ie</h3>
+        <div class="jumbotron">
+            <h1>About Me</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+        </div>
+    </div>
+
+
+    <a name="ContactTarget"></a>
+
+
+
+    <div class="container2">
+        <h1>Education</h1>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: lightgray;">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            TU Dublin</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <ul class="nav nav-pills nav-stacked" style="width: 5%; float: left; margin-left: 1em">
+                        <li class="active" style="margin-top: 5px"><a data-toggle="pill" href="#TUDhome">Home</a></li>
+                        <li><a data-toggle="pill" href="#TUDmenu1">Menu 1</a></li>
+                        <li><a data-toggle="pill" href="#TUDmenu2">Menu 2</a></li>
+                        <li><a data-toggle="pill" href="#TUDmenu3">Menu 3</a></li>
+                    </ul>
+
+                    <div class="tab-content" style="display:inline-block; margin-left: 45%; margin-bottom: 10%">
+                        <div id="TUDhome" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="TUDmenu1" class="tab-pane fade">
+                            <h3>Menu 1</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="TUDmenu2" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+                        <div id="TUDmenu3" class="tab-pane fade">
+                            <h3>Menu 3</h3>
+                            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: lightgray;">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            Crumlin College</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <ul class="nav nav-pills nav-stacked" style="width: 5%; float: left; margin-left: 1em">
+                        <li class="active" style="margin-top: 5px"><a data-toggle="pill" href="#Crumlinhome">Home</a></li>
+                        <li><a data-toggle="pill" href="#Crumlinmenu1">Menu 1</a></li>
+                        <li><a data-toggle="pill" href="#Crumlinmenu2">Menu 2</a></li>
+                        <li><a data-toggle="pill" href="#Crumlinmenu3">Menu 3</a></li>
+                    </ul>
+
+                    <div class="tab-content" style="display:inline-block; margin-left: 45%; margin-bottom: 10%">
+                        <div id="Crumlinhome" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="Crumlinmenu1" class="tab-pane fade">
+                            <h3>Menu 1</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="Crumlinmenu2" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+                        <div id="Crumlinmenu3" class="tab-pane fade">
+                            <h3>Menu 3</h3>
+                            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: lightgray;">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            Tallaght Community School</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <ul class="nav nav-pills nav-stacked" style="width: 5%; float: left; margin-left: 1em">
+                        <li class="active" style="margin-top: 5px"><a data-toggle="pill" href="#TCShome">Home</a></li>
+                        <li><a data-toggle="pill" href="#TCSmenu1">Menu 1</a></li>
+                        <li><a data-toggle="pill" href="#TCSmenu2">Menu 2</a></li>
+                        <li><a data-toggle="pill" href="#TCSmenu3">Menu 3</a></li>
+                    </ul>
+
+                    <div class="tab-content" style="display:inline-block; margin-left: 45%; margin-bottom: 10%">
+                        <div id="TCShome" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="TCSmenu1" class="tab-pane fade">
+                            <h3>Menu 1</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="TCSmenu2" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+                        <div id="TCSmenu3" class="tab-pane fade">
+                            <h3>Menu 3</h3>
+                            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container3">
+        <h1>Project Work</h1>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#4proj">Fourth Year Project</a></li>
+            <li><a data-toggle="tab" href="#3proj">Third Year Project</a></li>
+            <li><a data-toggle="tab" href="#2proj">Second Year Project</a></li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="4proj" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="3proj" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="2proj" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
 
         </div>
 
-        <div class="row-md-4">
-            <i class="fas fa-phone-square-alt fa-3x"></i>
-            <div class="text">
-                <h3>0851234567</h3>
-            </div>
+    </div>
 
+    <div class="workPlacementContainer">
+        <h1>Work Placement</h1>
+
+
+        <img src="claimsure.png" class="claimsureLogo">
+
+        <div class=claimsureText>
+            <h3>Claimsure Sláinte Ireland</h3>
+            <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h4>
         </div>
-
-        <div class="row-md-4">
-            <i class="fas fa-map-signs fa-3x"></i>
-            <div class="text">
-                <h3>A Random House, Some Road, Tallaght</h3>
-            </div>
-
-        </div>
-
 
 
 
     </div>
+
+
+
+
+    <div class="workInterestContainer">
+        <h1> My Work Interests and Hobbies</h1>
+
+
+
+        <div class="workInterestText">
+
+            <div class="container" style="width: 100%">
+
+                <ul class="nav nav-pills">
+                    <li><a data-toggle="pill" href="#prog">Programming</a></li>
+                    <li><a data-toggle="pill" href="#data">Data Analysis</a></li>
+                    <li><a data-toggle="pill" href="#interest">Personal Interests</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="prog" class="tab-pane fade">
+                        <h3>Programming</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="data" class="tab-pane fade">
+                        <h3>Data Analysis</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="interest" class="tab-pane fade">
+                        <h3>Personal Interests</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="container" style="width: 91%">
+        <h1>My Strengths and Weaknesses</h1>
+
+        <div class="progressBars">
+            <h3>Back End Development</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%; color: black; font-weight: bold ">
+                    90% - Extremely Competent
+                </div>
+            </div>
+
+            <h3>Front End Development</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:60%; color: black; font-weight: bold ">
+                    60% - Average
+                </div>
+            </div>
+
+            <h3>Personal Skills</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:80%; color: black; font-weight: bold ">
+                    80% - Very Competent
+                </div>
+            </div>
+
+            <h3>Team Skills</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%; color: black; font-weight: bold ">
+                    80% - Very Competent
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="centered">
+
+        <div class="container" style="float:left; width: 30%; margin-left: 5%">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+        <div class="container" style="display:inline-block; width: 30%;">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="container" style="float:left; width: 30%; margin-left: 5%">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="container" style="float:left; width: 30%; margin-left: 5%">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+        <div class="container" style="display:inline-block; width: 30%;">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="container" style="float:left; width: 30%; margin-left: 5%">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+
+    </div>
+
+    <!--Section: Contact v.2-->
+    <div class="container">
+    <section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>San Francisco, CA 94126, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@mdbootstrap.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+        </div>
+<!--Section: Contact v.2-->
+
+
+
+
 
 
     <script>
@@ -294,6 +563,23 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+
+
+
+
+
+        function clicked(e) {
+            if (!confirm('Are you sure?')) {
+                e.preventDefault();
+
+            }
+        }
+        
+        
+        function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
     </script>
 
 
