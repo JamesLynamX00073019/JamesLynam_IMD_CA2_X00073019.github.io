@@ -6,9 +6,10 @@
     <style>
     </style>
 
+    <!-- James Lynam - IMD CA2 - X00073019 - index.html -->
 
 
-
+    <!-- Title Page and Imports -->
     <title>James Lynam - IMD CA2 - CV</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,43 +21,47 @@
 
 </head>
 
-
-
-
 <body>
+
+    <!-- Button on right side that called a function to scroll to top of the page -->
+    <button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
+
+    <!-- Target for Home nav -->
+    <a name="HomeTarget"></a>
+
+
+    <!-- Start of Hero Image -->
     <div class="hero-image">
 
 
-        <!--    Not sure I want to use this - overkill?
+        <!-- Menu Button - Didn't use in the end, sticky nav enough
 
-        
         <div class="menuButton">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
         </div>
 
         -->
 
-
+        <!-- Div containing text for Hero Image -->
         <div class="hero-text">
 
-            <img src="me.png" class="profilePic" alt="James" height=500 width=300>
+            <!-- Profile Picture -->
+            <img src="Images/me.png" class="profilePic" alt="James" height=500 width=300>
 
             <div class="heroTextBox">
+                <div class="well" style="background-color: darkgray; border: 3px solid black;font-size:30px">James Lynam</div>
+                <div class="well well-sm" style="background-color: darkgray; border: 3px solid black;font-size:20px">
+                    <p>Software Developer</p>
+                </div>
 
-                <div class="well" style="font-size:30px">James Lynam</div>
-                <div class="well well-sm" style="font-size:20px">Software Developer</div>
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="ml-5 mr-5 btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Me</button>
-
+                <button type="button" class="ml-5 mr-5 btn btn-info btn-lg" style="background-color: #339966; border: 3px solid black;" data-toggle="modal" data-target="#myModal">Contact Me</button>
             </div>
-
-
         </div>
 
     </div>
     <div class="mainContainer">
 
-        <a name="HomeTarget"></a>
 
 
 
@@ -65,9 +70,9 @@
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
 
-                <!-- Modal content-->
+                <!-- Modal Content -->
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header" style="background-color: antiquewhite">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title"></h4>
                     </div>
@@ -80,7 +85,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="lastNameInput">Last Name</label>
-                                <input type="text" class="form-control" id="lastNameInput" placeholder="Enter  Last Name">
+                                <input type="text" class="form-control" id="lastNameInput" placeholder="Enter Last Name">
                             </div>
                             <div class="form-group">
                                 <label for="emailInput">Email Address</label>
@@ -104,13 +109,24 @@
             </div>
         </div>
 
+
+        <!-- Navbar -->
         <div id="navbar">
-            <a class="active" href="javascript:void(0)">Home</a>
-            <a href="javascript:void(0)">News</a>
-            <a href="javascript:void(0)">Contact</a>
+            <a href="#HomeTarget">Home</a>
+            <a href="#EducationTarget">Education</a>
+            <a href="#ProjectTarget">Project Work</a>
+            <a href="#WorkTarget">Work Placement</a>
+            <a href="#HobbiesTarget">Hobbies and Interests</a>
+            <a href="#StrengthTarget">Strengths and Weaknesses</a>
+            <a href="#ContactTarget">Contact</a>
+            <!-- Right Placed nav link -->
+            <div class="topnav-right">
+                <a href="resourcePage.html">Resources Used for CA</a>
+            </div>
         </div>
 
 
+        <!-- Didn't use this in the end, sticky navbar was enough
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -120,23 +136,27 @@
             <a href="#">TODO</a>
         </div>
 
+        -->
 
+        <!-- Jumbotron -->
         <div class="container">
             <div class="jumbotron">
                 <h1>About Me</h1>
-                <p>I am currently in my fourth year in TUD Tallaght campus. I am undergoing an honours degree in Computing with a focus on Software Development.</p>
+                <p>I am 30 years old and currently in my fourth year in TUD Tallaght campus. I am undergoing an honours degree in Computing with a focus on Software Development.</p>
                 <p>I consider myself a very hardworking and compassionate person, and being a mature student, feel as if I bring a more wizened attitude to learning. My main focus in college is that of developing software, and in the future, I hope to develop my skills enough to go into the medical industry to develop medical software.</p>
+                <button class="btn btn-primary btn-lg" style="margin-left: 22em; margin-top: 2em"><i class="fa fa-download"></i><a style="color: white;margin-left:5px" href="JamesLynam.docx" download="JamesLynamCV">Download CV</a></button>
             </div>
+
+            <!-- Target for Eduction nav -->
+            <a name="EducationTarget"></a>
         </div>
 
         <hr>
 
-        <a name="ContactTarget"></a>
-
-
-
         <div class="container2">
 
+
+            <!-- Accordian for Education -->
             <h1>Education</h1>
 
             <div class="panel-group" id="accordion">
@@ -281,13 +301,23 @@
 
             </div>
 
+            <!-- Target for Project nav -->
+            <a name="ProjectTarget"></a>
         </div>
+
+
+
+
 
         <hr>
 
+        <!-- Container for Project -->
         <div class="container3">
             <h1>Project Work</h1>
 
+
+
+            <!-- Tabs with links to display content below -->
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#4proj">Fourth Year Project</a></li>
                 <li><a data-toggle="tab" href="#3proj">Third Year Project</a></li>
@@ -301,7 +331,7 @@
                     <p>This project is being completed with assistance from IBM Ireland. The main objective of the project is to allow the user to use their Android Watch as a security token to allow themselves to log on to a desktop or mobile device. This occurs by allowing the transfer of security credentials through Near-Field Communication (NFC).</p>
                     <p>Once the receiving device has verified that the credentials are correct, it will allow access to the device. A simple use-case would be a user swipeing their watch at their phone in order to log on. This also offers more security over more traditional biometrics such as fingerpring scanning, and facial recognition, which can be falsified.</p>
                     <p>Logical Architecture below:</p>
-                    <img src=UCLA.png class="center">
+                    <img src=Images/UCLA.png class="center">
                 </div>
                 <div id="3proj" class="tab-pane fade">
                     <h3>Data Analysis - 19,000 Spotify Songs</h3>
@@ -310,11 +340,15 @@
                     <p>We used Python's ability to parse, pre-process and analyse data to make comparisons and create graphs based on certain test criteria.</p>
                     <p>We used an online tool known and Prezi to present our findings to our lecturer.</p>
                     <p>An example of one such comparison of the data we made:</p>
-                    <img src=DAExample.png class="center">
+                    <img src=Images/DAExample.png class="center">
                 </div>
                 <div id="2proj" class="tab-pane fade">
-                    <h3>Menu 2</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <h3>Music Store Sales and Stock Control</h3>
+                    <p>In second year, I was in a group of 4 to develop a system in Java to store and control music. We called it The Soundgarden, and we essentially did all of the programming in the back end in Java, while we did the front-end in HTML and CSS with the Java Play Framework.</p>
+                    <p>The group members were myself, Stephen Murphy, Craig Larkin, and Mark Kenny.</p>
+                    <p>The website allowed the user to browse through a fictional online store and choose from a number of bands or genres. We needed to include a lot of functionality such as adding to cart, processing payment etc.</p>
+                    <p>A sample of one of the pages below: </p>
+                    <img src=Images/SampleYear2Proj.png class="center">
                 </div>
 
             </div>
@@ -322,15 +356,22 @@
         </div>
 
         <hr>
+        <!-- Target for Work Nav -->
+        <a name="WorkTarget"></a>
         <div class="workPlacementContainer">
+
             <h1>Work Placement</h1>
 
 
-            <img src="claimsure.png" class="claimsureLogo">
+            <img src="Images/claimsure.png" class="claimsureLogo">
 
             <div class=claimsureText>
-                <h3>Claimsure Sláinte Ireland</h3>
-                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h4>
+                <h2>Claimsure Sláinte Ireland</h2>
+                <h4>For the second semester of my third year in college, I entered into an internship with Claimsure Sláinte, which is a subsidiary company of Clanwilliam Health.</h4>
+                <h4>The company designed and maintained software to help hospitals and other medical institutions process medical insurance claims. This was done using a programming language known as Health-Level 7, which is the gold standard across the clients.</h4>
+                <h4>On the companys side, much of the data processing is done in MySQL, while much of the functionality and security (like that used in their Iguana Translation Engine) is formed in Lua.</h4>
+                <h4>I had a great time there and met a lot of good people while learning a lot about the industry too. This is great for me as I intend to enter the medical industry as a software developer.</h4>
+                <h4>Unfortunately, I had to stop my internship early due to the COVID-19 pandemic, but I still keep in contact now.</h4>
             </div>
 
 
@@ -340,10 +381,14 @@
 
 
         <hr>
+        <!-- Target for Hobby nav -->
+        <a name="HobbiesTarget"></a>
         <div class="workInterestContainer">
+
             <h1>Hobbies and Interests</h1>
             <div class="container">
 
+                <!-- Carousel of Hobbies -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -355,26 +400,26 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="gaming.jpg" alt="Gaming" style="width:100%;">
+                            <img src="Images/gaming.jpg" alt="Gaming" style="width:100%;">
                             <div class="carousel-caption">
                                 <h3>Gaming</h3>
-                                <p>LA is always so much fun!</p>
+                                <p>I have always loved games.</p>
                             </div>
                         </div>
 
                         <div class="item">
-                            <img src="guitar.jpg" alt="Chicago" style="width:100%;">
+                            <img src="Images/guitar.jpg" alt="Guitar" style="width:100%;">
                             <div class="carousel-caption">
-                                <h3>Los Angeles</h3>
-                                <p>LA is always so much fun!</p>
+                                <h3>Guitar</h3>
+                                <p>I have played since i was 16.</p>
                             </div>
                         </div>
 
                         <div class="item">
-                            <img src="cinema.jpg" alt="New york" style="width:100%;">
+                            <img src="Images/cinema.jpg" alt="Movies" style="width:100%;">
                             <div class="carousel-caption">
-                                <h3>Los Angeles</h3>
-                                <p>LA is always so much fun!</p>
+                                <h3>Movies</h3>
+                                <p>I love watching movies.</p>
                             </div>
                         </div>
                     </div>
@@ -395,12 +440,17 @@
 
 
 
-
         <hr>
 
-        <div class="container" style="width: 91%; margin-left: 30%">
-            <h1>My Strengths and Weaknesses</h1>
+        <h1 style="margin-left: 5%">My Strengths and Weaknesses</h1>
 
+        <div class="containerProgress">
+
+            <!-- Target for Strength nav -->
+            <a name="StrengthTarget"></a>
+
+
+            <!-- Progress Bars for Strengths -->
             <div class="progressBars">
                 <h3>Back End Development</h3>
                 <div class="progress">
@@ -434,18 +484,22 @@
         </div>
 
 
+        <!-- Button for Technical Skills -->
         <h2 style="text-align: center">My Technical Skills</h2>
-        <button type="button" style="margin-left: 45%" class="btn btn-info" data-toggle="collapse" data-target="#showSkillCards">Click here to see my skills!</button>
+
+        <!-- Collapses to Show Cards -->
+        <button type="button" style="margin-left: 44%" class="btn btn-info" data-toggle="collapse" data-target="#showSkillCards">Click here to see my skills!</button>
+
+        <!-- Skill Cards -->
         <div id="showSkillCards" class="collapse">
             <div class="centered">
-
                 <div class="container" style="float:left; width: 30%; margin-left: 5%">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                        <img class="card-img-top" src="Images/java.png" alt="Card image" style="width:70%">
                         <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
+                            <h4 class="card-title">Java</h4>
+                            <p class="card-text">I studied Java comprehensibly throughout first and second year. I also implemented it in my second year project.</p>
+                            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                     <br>
@@ -454,11 +508,11 @@
 
                 <div class="container" style="display:inline-block; width: 30%;">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                        <img class="card-img-top" src="Images/csharp.png" alt="Card image" style="width:70%">
                         <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
+                            <h4 class="card-title">C Sharp</h4>
+                            <p class="card-text">I am studying C# in my final year in college and hope to learn more as I move on in the future.</p>
+                            <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                     <br>
@@ -466,11 +520,11 @@
 
                 <div class="container" style="float:left; width: 30%; margin-left: 5%">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                        <img class="card-img-top" src="Images/cpp.png" alt="Card image" style="width:70%">
                         <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
+                            <h4 class="card-title">C ++</h4>
+                            <p class="card-text">I used C++ quite a bit in 3rd year, during Data Structures and Algorithms. </p>
+                            <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                     <br>
@@ -478,11 +532,11 @@
 
                 <div class="container" style="float:left; width: 30%; margin-left: 5%">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                        <img class="card-img-top" src="Images/python.jpg" alt="Card image" style="width:70%">
                         <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
+                            <h4 class="card-title">Python</h4>
+                            <p class="card-text">I have been using Python since 2nd year to process and analyse data.</p>
+                            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                     <br>
@@ -491,11 +545,11 @@
 
                 <div class="container" style="display:inline-block; width: 30%;">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                        <img class="card-img-top" src="Images/sql.png" alt="Card image" style="width:70%">
                         <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
+                            <h4 class="card-title">SQL (Structured Query Language)</h4>
+                            <p class="card-text">I have been using SQL in many forms throughout the years, most recently in my work placement.</p>
+                            <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                     <br>
@@ -503,11 +557,11 @@
 
                 <div class="container" style="float:left; width: 30%; margin-left: 5%">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="java.jpg" alt="Card image" style="width:70%">
+                        <img class="card-img-top" src="Images/javascript.png" alt="Card image" style="width:70%">
                         <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
+                            <h4 class="card-title">JavaScript</h4>
+                            <p class="card-text">I have been using JavaScript since first year, in tandem with any HTML and CSS I use.</p>
+                            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                     <br>
@@ -519,13 +573,10 @@
         </div>
 
 
-
-
-
-
         <hr>
-        <!-- Container (Contact Section) -->
+        <!-- Contact Form -->
         <div id="contact" class="container">
+            <a name="ContactTarget"></a>
             <h3 class="text-center">Contact Me</h3>
 
 
@@ -567,6 +618,7 @@
 
 
     <script>
+        /*  Old script for Sidenav
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         }
@@ -574,11 +626,10 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+        */
 
 
-
-
-
+        // Alert Box for email sending
         function clicked(e) {
             var txt;
             if (confirm("Press a button!")) {
@@ -590,9 +641,14 @@
         }
 
 
+
+        // Sticky Navbar and Top Button scroll
         window.onscroll = function() {
             myFunction()
+            scrollFunction()
         };
+
+
 
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
@@ -604,10 +660,45 @@
                 navbar.classList.remove("sticky");
             }
         }
+
+
+        //Get the button
+        var mybutton = document.getElementById("backToTop");
+
+
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Script supposed to slow speed at which user jumps to target links within page
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
     </script>
 
+</body>
 
-
-
-
-</body></html>
+</html>
