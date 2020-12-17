@@ -511,6 +511,9 @@ html {
     .profilePic {
         width: 50%;
     }
+    .showSkillCards{
+        display: none;
+    }
 
 
 
@@ -543,6 +546,10 @@ html {
         display: none;
 
     }
+    #showSkillCards{
+        display: none;
+    }
+
 
 
 }
@@ -582,6 +589,9 @@ html {
         display: none;
 
     }
+    #showSkillCards{
+        display: none;
+    }
 
 
 }
@@ -617,6 +627,10 @@ html {
         display: none;
 
     }
+    
+      #showSkillCards{
+        display: none;
+    }
 
 }
 
@@ -643,6 +657,9 @@ html {
     .LI-profile-badge {
         display: none;
 
+    }
+      #showSkillCards{
+        display: none;
     }
 
 
