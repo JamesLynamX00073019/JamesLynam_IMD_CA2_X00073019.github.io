@@ -112,6 +112,7 @@
 
         <!-- Navbar -->
         <div id="navbar">
+            <div id ="myLinks">
             <a href="#HomeTarget">Home</a>
             <a href="#EducationTarget">Education</a>
             <a href="#ProjectTarget">Project Work</a>
@@ -119,11 +120,26 @@
             <a href="#HobbiesTarget">Hobbies and Interests</a>
             <a href="#StrengthTarget">Strengths and Weaknesses</a>
             <a href="#ContactTarget">Contact</a>
+                </div>
             <!-- Right Placed nav link -->
+      
+            
+            
+            
+            
             <div class="topnav-right">
-                <a href="resourcePage.html">Resources Used for CA</a>
+                <a href="resourcePage.html">Resources Used</a>
             </div>
         </div>
+        <div class="hamburger">
+        <a href="javascript:void(0);" class="icon" onclick="myFunctionResponsive()">
+          <i class="fa fa-bars"></i></a>
+            </div>
+        
+        
+        
+        
+        
 
 
         <!-- Didn't use this in the end, sticky navbar was enough
@@ -352,12 +368,12 @@
                 </div>
 
             </div>
-
+            <!-- Target for Work Nav -->
+            <a name="WorkTarget"></a>
         </div>
 
         <hr>
-        <!-- Target for Work Nav -->
-        <a name="WorkTarget"></a>
+
         <div class="workPlacementContainer">
 
             <h1>Work Placement</h1>
@@ -374,15 +390,15 @@
                 <h4>Unfortunately, I had to stop my internship early due to the COVID-19 pandemic, but I still keep in contact now.</h4>
             </div>
 
-
+            <!-- Target for Hobby nav -->
+            <a name="HobbiesTarget"></a>
 
         </div>
 
 
 
         <hr>
-        <!-- Target for Hobby nav -->
-        <a name="HobbiesTarget"></a>
+
         <div class="workInterestContainer">
 
             <h1>Hobbies and Interests</h1>
@@ -697,8 +713,15 @@
             });
         });
 
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunctionResponsive() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
     </script>
 
-</body>
-
-</html>
+</body></html>

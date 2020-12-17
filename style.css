@@ -1,4 +1,3 @@
-
 /* Profile Pic */
 
 .profilePic {
@@ -431,22 +430,144 @@ html {
 
 
 
+
+
 /* RESPONSIVE DESIGN */
 
 
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
+@media screen and (max-width: 320x) {
 
-    .sidenav a {
-        font-size: 18px;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+
+    .tab-content{
+        background-color: pink;
     }
 }
 
 
 
+@media screen and (max-width: 720px) {
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+    
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 48.2%;
+}
+    
+    .heroTextBox{
+        display: none;
+    }
+    .profilePic{
+        width: 80%
+    }
+    
+    #navbar{
+        display:none;
+    }
+    .hamburger{
+        background-color: #333;
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    .btn btn-primary btn-lg{
+        display: none;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .jumbotron {
+
+        width: 71%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+.jumbotron {
+
+    width: 94%;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 1200px) {
+.jumbotron {
+
+    width:77%;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+.jumbotron {
+
+    width:81%;
+    }
+}
 
 
 
