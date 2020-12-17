@@ -180,6 +180,7 @@ html {
     margin-left: 5em;
     margin-right: 5em;
     background-image: url(Images/background.jpg);
+     scroll-behavior: smooth;
 }
 
 .textYear {
